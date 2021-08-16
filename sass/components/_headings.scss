@@ -1,0 +1,66 @@
+.second-heading {
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.17;
+  margin-bottom: 30px;
+  text-align: center;
+  color: var(--add-cl);
+
+  @media screen and (min-width: 1200px) {
+    font-size: 36px;
+    line-height: 1.16;
+    margin-bottom: 50px;
+  }
+}
+
+.hero__heading {
+  font-weight: 900;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+  font-size: 26px;
+  line-height: 1.61;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 44px;
+    line-height: 1.36;
+  }
+}
+
+.form__heading {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.5;
+  text-align: center;
+  color: var(--add-cl);
+  margin-bottom: 12px;
+
+  @media screen and (max-width: 479px) {
+    font-size: 15px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    line-height: 1.15;
+  }
+}
+
+.features__headings {
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: var(--add-cl);
+  margin-bottom: 10px;
+
+  @media screen and (max-width: 767.9px) {
+    text-align: center;
+  }
+}
+
+.cardset__heading {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--add-cl);
+  margin-bottom: 4px;
+}
