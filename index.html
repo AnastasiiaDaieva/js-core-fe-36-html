@@ -20,6 +20,7 @@
 
   <body class="overflow-hidden">
     <header class="header">
+      <button id="clear">click</button>
       <div class="container header__container">
         <div class="mobile-menu">
           <div class="logo" id="logo-parent">
@@ -123,7 +124,9 @@
     </header>
     <main>
       <section class="hero">
-        <div class="hero__container">
+        <input type="text" placeholder="search" name="search" id="" />
+        <ul class="photoList"></ul>
+        <!-- <div class="hero__container">
           <h1 class="hero__heading">
             Эффективные решения
             <br />
@@ -193,55 +196,59 @@
               <button type="submit" class="button form__button">Отправить</button>
             </form>
           </div>
-        </div>
+        </div> -->
       </section>
       <section class="section features">
         <div class="container">
           <h2 class="second-heading visually-hidden">Особенности</h2>
-          <ul class="features__list list">
-            <li class="features__item">
-              <div class="features__container">
-                <svg class="features__icon" width="70" height="70">
-                  <use href="./images/icons/sprite-optimized.svg#icon-antenna"></use>
-                </svg>
-              </div>
-              <h3 class="features__headings">Внимание к деталям</h3>
-              <p class="features__text">
-                Идейные соображения, а также начало повседневной работы по формированию позиции.
-              </p>
-            </li>
-            <li class="features__item">
-              <div class="features__container">
-                <svg class="features__icon" width="70" height="70">
-                  <use href="./images/icons/sprite-optimized.svg#icon-clock"></use>
-                </svg>
-              </div>
-              <h3 class="features__headings">Пунктуальность</h3>
-              <p class="features__text">
-                Задача организации, в особенности же рамки и место обучения кадров влечет за собой.
-              </p>
-            </li>
-            <li class="features__item">
-              <div class="features__container">
-                <svg class="features__icon" width="70" height="70">
-                  <use href="./images/icons/sprite-optimized.svg#icon-diagram"></use>
-                </svg>
-              </div>
-              <h3 class="features__headings">Планирование</h3>
-              <p class="features__text">
-                Равным образом консультация с широким активом в значительной степени обуславливает.
-              </p>
-            </li>
-            <li class="features__item">
-              <div class="features__container">
-                <svg class="features__icon" width="70" height="70">
-                  <use href="./images/icons/sprite-optimized.svg#icon-astronaut"></use>
-                </svg>
-              </div>
-              <h3 class="features__headings">Современные технологии</h3>
-              <p class="features__text">Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
-            </li>
-          </ul>
+          <template>
+            <ul class="features__list list">
+              <li class="features__item">
+                <div class="features__container">
+                  <svg class="features__icon" width="70" height="70">
+                    <use href="./images/icons/sprite-optimized.svg#icon-antenna"></use>
+                  </svg>
+                </div>
+                <h3 class="features__headings">Внимание к деталям</h3>
+                <p class="features__text">
+                  Идейные соображения, а также начало повседневной работы по формированию позиции.
+                </p>
+              </li>
+              <li class="features__item">
+                <div class="features__container">
+                  <svg class="features__icon" width="70" height="70">
+                    <use href="./images/icons/sprite-optimized.svg#icon-clock"></use>
+                  </svg>
+                </div>
+                <h3 class="features__headings">Пунктуальность</h3>
+                <p class="features__text">
+                  Задача организации, в особенности же рамки и место обучения кадров влечет за собой.
+                </p>
+              </li>
+              <li class="features__item">
+                <div class="features__container">
+                  <svg class="features__icon" width="70" height="70">
+                    <use href="./images/icons/sprite-optimized.svg#icon-diagram"></use>
+                  </svg>
+                </div>
+                <h3 class="features__headings">Планирование</h3>
+                <p class="features__text">
+                  Равным образом консультация с широким активом в значительной степени обуславливает.
+                </p>
+              </li>
+              <li class="features__item">
+                <div class="features__container">
+                  <svg class="features__icon" width="70" height="70">
+                    <use href="./images/icons/sprite-optimized.svg#icon-astronaut"></use>
+                  </svg>
+                </div>
+                <h3 class="features__headings">Современные технологии</h3>
+                <p class="features__text">
+                  Значимость этих проблем настолько очевидна, что реализация плановых заданий.
+                </p>
+              </li>
+            </ul>
+          </template>
         </div>
       </section>
       <section class="section activity">
@@ -605,11 +612,11 @@
     <footer class="footer">
       <div class="container footer__container">
         <div class="address-container" id="footer-logoparent">
-          <!-- <a href="./index.html" class="footer__logo">
+          <a href="./index.html" class="footer__logo">
             <span class="logo logo--accent">Web</span>
             Studio
-          </a> -->
-          <!-- <address class="footer__address">
+          </a>
+          <address class="footer__address">
             <ul class="list">
               <li class="footer__address footer__address--physical">
                 <a
@@ -626,11 +633,11 @@
               </li>
               <li><a href="tel:+380991111111" class="footer__link footer__contact">+38 099 111 11 11</a></li>
             </ul>
-          </address> -->
+          </address>
         </div>
         <div class="footer__join">
           <h2 class="footer__text">Присоединяйтесь</h2>
-          <!-- <ul class="social-media__icons social-media__icons--footer list">
+          <ul class="social-media__icons social-media__icons--footer list">
             <li class="social-media__icon">
               <a
                 href=""
@@ -679,7 +686,7 @@
                 </svg>
               </a>
             </li>
-          </ul> -->
+          </ul>
         </div>
         <div class="footer__subscribe">
           <label for="subscribe" class="form__label">
@@ -699,8 +706,9 @@
       </div>
     </footer>
     <script src="./js/mobile-menu.js"></script>
-    <script src="./js/modal.js"></script>
-    <script src="./js/speaker-form.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/debounce-throttle@1.0.4/index.min.js"></script>
+    <!-- <script src="./js/modal.js"></script> -->
+    <!-- <script src="./js/speaker-form.js"></script> -->
     <script src="./js/index.js" type="module"></script>
   </body>
 </html>

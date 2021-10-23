@@ -1675,4 +1675,10 @@ body.modal-open {
   fill: currentColor;
   transition: color var(--standard-animation);
 }
+
+#list {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
 /*# sourceMappingURL=main.css.map */
